@@ -1,0 +1,488 @@
+:root {
+  --body-color: #12193e;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--body-color);
+}
+
+/* color and other styles */
+.color-white {
+  color: white;
+}
+
+.text-white {
+  font-family: Segoe UI;
+  text-decoration: none;
+  color: #bcbdc3;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* navigation bar */
+#nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+#nav-bar div {
+  margin: auto;
+}
+
+#user-image {
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-image: url(images/myimg.jfif);
+  background-position: center;
+  background-size: contain;
+}
+
+#search {
+  background-color: #12193e;
+  padding: 1%;
+  border-radius: 8px;
+}
+
+#search-bar input {
+  background-color: transparent;
+  border: none;
+}
+
+/* main section */
+main {
+  width: 60%;
+  height: 89%;
+  margin: 5%;
+  /*border: 2px solid cyan;*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+main section {
+  width: 95%;
+  /*border: 2px solid cyan;*/
+  margin: 3% 0%;
+}
+.section-heading {
+  font-size: 1.4rem;
+  position: relative;
+  left: 5%;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+/* latest realase */
+.bg-img-center {
+  background-position: center;
+  background-size: cover;
+}
+
+.latest-release-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.latest-release-card {
+  width: 40%;
+  margin-top: 2%;
+  position: relative;
+}
+
+.latest-release-card div {
+  display: inline-block;
+}
+
+.album-image {
+  height: 100px;
+  width: 100px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/3/35/The_Eminem_Show.jpg);
+  position: relative;
+}
+
+.song-description {
+  font-size: 0.6rem;
+  letter-spacing: 1.5px;
+}
+.song-name {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.card-name {
+  margin-left: 5%;
+  right: 10%;
+  vertical-align: top;
+}
+.card-info {
+  margin-left: 10%;
+  vertical-align: top;
+  position: absolute;
+  left: 90%;
+}
+
+/*popular artist*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*overflow: scroll;*/
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.artist {
+  margin: 0.5%;
+  position: relative;
+}
+.artist img {
+  border-radius: 50%;
+}
+.artist p {
+  font-size: 0.8rem;
+  margin-top: 0px;
+}
+
+/* stations */
+#stations {
+  background-color: #101642;
+}
+.station {
+  margin: 2%;
+  text-align: center;
+  position: relative;
+}
+
+.station p {
+  position: absolute;
+  top: 15%;
+  left: 27%;
+  font-weight: bold;
+  color: white;
+}
+.station img {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+/* catagories */
+
+#catagories .container {
+  justify-content: space-between;
+}
+
+#catagories div div img {
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
+.party,
+.electronic,
+.roadtrip {
+  position: relative;
+  width: 30%;
+  margin: 5px;
+}
+#catagories div div p {
+  position: absolute;
+  top: 30%;
+  left: 36%;
+  font-weight: bold;
+  color: white;
+}
+
+/*latest english*/
+
+.latest-song-card {
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+}
+.song-image {
+  width: 100%;
+}
+
+#song-name,
+#song-desc {
+  margin: 1.5%;
+}
+
+/*  music controls */
+
+#music-controls {
+  height: 10%;
+  width: 100%;
+  min-height: 60px;
+  background-color: rgba(40, 40, 40, 0.99);
+  position: fixed;
+  bottom: 1px;
+}
+#music-controls-container {
+  height: 98%;
+  width: 98%;
+  margin: auto;
+}
+#controls-1 {
+  width: 20%;
+  height: 85%;
+  /*border: 2px solid cyan;*/
+}
+
+#controls-1 img {
+  width: 15%;
+  height: 60%;
+  margin: 5%;
+}
+
+#controls-1 a {
+  color: white;
+  margin-top: 6%;
+}
+
+#controls-3 {
+  width: 20%;
+  height: 85%;
+  /*border: 2px solid cyan;*/
+}
+#controls-3 div div {
+  color: white;
+  margin-top: 10%;
+  margin-right: 2px;
+}
+
+#controls-2 {
+  width: 50%;
+  height: 85%;
+  /*border: 2px solid cyan;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#controls-2-2,
+#controls-2-1 {
+  height: 40%;
+  margin-top: 1%;
+}
+
+#controls-2-1 {
+  margin-top: 3%;
+}
+#controls-2 div div a {
+  color: white;
+}
+
+#controls-2-2 p {
+  margin: 0px;
+}
+
+.input-style {
+  color: #6eb532;
+  width: 60px;
+}
+/*#controls-1,#controls-2,#controls-3{
+  margin: 0px 10px 0px 10px;
+}*/
+
+/*  queue */
+
+#main-parent {
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  height: 100%;
+  width: 100%;
+  /*border: 2px solid cyan;*/
+  /*justify-content: space-around;*/
+}
+#queue {
+  width: 30%;
+  /*height: 100px;*/
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  /*border: 2px solid cyan;*/
+  position: relative;
+}
+
+ol li div {
+  /*border: 2px solid cyan;*/
+}
+.queue-list {
+  height: 100%;
+  width: 80%;
+}
+
+.queue-list li {
+  margin-right: 10%;
+  margin-top: 8%;
+  height: 3.5%;
+}
+
+.queue-list li div {
+  height: 100%;
+  position: relative;
+}
+
+.queue-list li div img {
+  width: 20%;
+  box-shadow: 0px 0px 20px 0px #ffffff5e;
+  border-radius: 7%;
+  position: relative;
+  top: 30%;
+}
+
+.queue-list li div i {
+  position: relative;
+  top: 35%;
+}
+
+#corusel {
+  justify-content: space-between;
+}
+
+#corusel img {
+  width: 28%;
+}
+
+#queue-dropdown {
+  background-color: white;
+  width: 150px;
+  position: absolute;
+  z-index: 2;
+  transform: scale(0.5);
+  display: none;
+  /*transition: transform 0.5s;*/
+}
+#queue-dropdown p {
+  padding: 5px;
+  margin: 0;
+  border-bottom: 1px solid black;
+  color: darkgrey;
+}
+font-size: 0.8rem;
+
+/* trasitions and hovers */
+
+.transition {
+  transition: all 0.5s ease-in-out;
+}
+
+#corusel img:hover {
+  transform: scale(1.3);
+}
+
+#catagories div div img:hover {
+  transform: scale(1.2);
+}
+
+aside header div:hover #queue-dropdown {
+  /*transform: scale(1.0);*/
+  display: block;
+}
+
+.card-info i:hover #queue-dropdown {
+  display: block;
+  color: blue;
+}
+
+/* trasitions for play buttons */
+#playbutton {
+  position: absolute;
+  left: 41.5%;
+  bottom: 50%;
+  display: none;
+  transition: 1s;
+}
+#playbutton a i {
+  font-size: 2rem;
+  color: white;
+  z-index: 2;
+}
+
+#playbutton2 {
+  position: absolute;
+  top: 25%;
+  right: 77%;
+  display: none;
+  transition: 1s;
+}
+#playbutton2 a i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#playbutton3 {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  display: none;
+}
+#playbutton3 a i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.album-image #playbutton2 {
+  left: 40%;
+  top: 40%;
+}
+
+.artist:hover #playbutton {
+  display: block;
+}
+
+.latest-song-card:hover #playbutton {
+  display: block;
+}
+.queue-list li:hover #playbutton2 {
+  display: block;
+}
+
+.album-image:hover #playbutton2 {
+  display: block;
+}
+
+@media screen and (max-width: 780px) {
+  #main-parent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #main-parent main {
+    width: 95%;
+  }
+  #queue {
+    width: 100%;
+    margin: auto;
+  }
+  #queue header h3 {
+    margin-left: 5%;
+  }
+  #queue ol {
+    margin: auto;
+  }
+
+  #queue ol li {
+    width: 100%;
+  }
+}

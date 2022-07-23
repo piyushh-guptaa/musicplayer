@@ -1,0 +1,143 @@
+.child-width {
+  width: 100%;
+}
+#playlist-box {
+  width: 100%;
+  margin: 0;
+  /*border: 2px solid cyan;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#playlist-content {
+  width: 57%;
+  /*border: 2px solid cyan;*/
+}
+
+#playlist-aside {
+  width: 36%;
+  /*border: 2px solid cyan;*/
+}
+#artist-info {
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  /*border: 2px solid cyan;*/
+  background-color: #141b41;
+}
+
+#artist-image {
+  width: 30%;
+  /*border: 2px solid cyan;*/
+}
+#artist-image img {
+  width: 100%;
+  height: 100%;
+}
+
+#artist-name-info {
+  width: 60%;
+  /*border: 2px solid cyan;*/
+  position: relative;
+}
+
+.child-width {
+  width: 100%;
+}
+#artist-song-cards {
+  /*border: 1px solid cyan;*/
+}
+
+.song-cards {
+  /*border: 2px solid cyan;*/
+  margin-top: 1.5%;
+  border-radius: 6px;
+  height: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1a1e33;
+}
+
+.song-cards > div {
+  /*border: 2px solid cyan;*/
+  width: 10%;
+}
+.song-cards div div img {
+  width: 60%;
+  margin-top: 5%;
+  max-height: 55px;
+}
+.object-center {
+  position: relative;
+  top: 12%;
+}
+
+.row-cotainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* aside */
+
+.similar-artists-card {
+  margin-top: 5%;
+  position: relative;
+}
+
+.similar-artists-card img {
+  width: 20%;
+  transform: translateX(10%);
+  box-shadow: 0px 0px 20px 4px #645083a8;
+}
+
+.similar-artists-card #playbutton2 {
+  left: 10%;
+  top: 40%;
+}
+.song-cards #playbutton2 {
+  top: 40%;
+}
+#recently-played-list li div img {
+  width: 20%;
+}
+
+.make-inline {
+  display: inline-block;
+}
+
+/* transitions */
+#recently-played-list li div #playbutton2 {
+  left: 10%;
+  top: 40%;
+}
+
+.song-cards:hover #playbutton2 {
+  display: block;
+}
+
+.similar-artists-card:hover #playbutton2 {
+  display: block;
+}
+
+#recently-played-list li div:hover #playbutton2 {
+  display: block;
+}
+
+@media screen and (max-width: 780px) {
+  #playlist-box {
+    flex-direction: column;
+  }
+  #playlist-box section,
+  #playlist-box aside {
+    width: 95%;
+  }
+
+  #artist-info {
+    height: 30%;
+  }
+}
